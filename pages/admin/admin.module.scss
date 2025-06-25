@@ -1,0 +1,23 @@
+.pageAdmin{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin:0px 2rem;
+
+    .title {
+        font-size: 20px;
+    }
+
+    .bodyAdmin {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        text-align: center;
+        .division {
+            border-radius: 12px;
+            border: 1px solid;
+            padding: 10px;
+        }
+    }
+}
