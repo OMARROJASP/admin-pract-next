@@ -17,6 +17,7 @@ export default function EditarProducto ({ producto, idProduct, api,categories}) 
         const [category, setCategory] = useState('');
         const [stock, setStock] = useState('');
         const [supplier, setSupplier] = useState('');
+        const [ofert, setOfert] = useState('');
     
 
 
@@ -44,6 +45,7 @@ export default function EditarProducto ({ producto, idProduct, api,categories}) 
             formData.append('prod_category',  category)
             formData.append('prod_stock',  stock)
             formData.append('prod_supplier',  supplier)
+            formData.append('prod_ofert', ofert) 
 
             try {
                 console.log('Aqui esta el enlace: ',`${api}/product/${idProduct}` )

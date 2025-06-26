@@ -78,6 +78,7 @@ export default function ListProductos({ products = [], api }) {
               <p>{p.prod_name}</p>
               <p>{p.prod_description}</p>
               <p>s/. {p.prod_price}</p>
+              <p>Descuento de  {p.prod_ofert}</p>
             </div>
             
             <div style={{display: 'flex', 'justifyContent': 'space-around'}}>

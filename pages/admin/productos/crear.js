@@ -23,6 +23,7 @@ export default function CrearProducto ({categories}) {
     const [category, setCategory] = useState([]);
     const [stock, setStock] = useState('');
     const [supplier, setSupplier] = useState('');
+    const [ofert, setOfert] = useState('');
 
     const listaCategory = categories.map(p => {
         return {value: p.cat_id, label: p.cat_name}
@@ -40,6 +41,7 @@ export default function CrearProducto ({categories}) {
         formData.append('prod_category', category)
         formData.append('prod_stock', stock)
         formData.append('prod_supplier', supplier) 
+        formData.append('prod_ofert', ofert) 
 
         try {
             const res = await axios.post('http://localhost:3001/product', formData, {
@@ -102,6 +104,13 @@ export default function CrearProducto ({categories}) {
                     placeholder="stock"
                     value={stock}
                     onChange={(e) => setStock(e.target.value)}
+                    required
+                />
+                <input 
+                    type="number"
+                    placeholder="Descuento"
+                    value={stock}
+                    onChange={(e) => setOfert(e.target.value)}
                     required
                 />
                     <input 
