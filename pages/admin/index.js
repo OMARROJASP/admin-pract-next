@@ -132,10 +132,7 @@ export  default function PageAdmin({usuarios, categoria, productos, orders = [],
           <Bar dataKey="total" fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
         </BarChart>
       </ResponsiveContainer>
-
-                
-
-            </div>
+ </div>
         </div>
     )
 }

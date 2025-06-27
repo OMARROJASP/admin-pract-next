@@ -109,7 +109,7 @@ export default function CrearProducto ({categories}) {
                 <input 
                     type="number"
                     placeholder="Descuento"
-                    value={stock}
+                    value={ofert}
                     onChange={(e) => setOfert(e.target.value)}
                     required
                 />
