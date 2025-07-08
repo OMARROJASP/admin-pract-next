@@ -33,7 +33,7 @@ export default function Categoria({ categories = [] }) {
       <ul>
         {categories.map((p) => (
           <li key={p.cat_id}> 
-            <img src={`p.cat_imageUrl`} />
+            <img src={p.cat_imageUrl} />
             <div>{p.cat_name}</div>
             <div>{p.cat_description}</div>
             <button>

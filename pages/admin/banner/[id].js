@@ -55,7 +55,7 @@ export default function EditarProducto ({ banner, idBanner, api}) {
     return (
         <>
              <h1>Actualizar Banner</h1>
-            <form onSubmit={EditarProducto}>
+            <form onSubmit={ EditarProducto}>
                 <input 
                     type="text"
                     value={title}
